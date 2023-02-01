@@ -39,12 +39,13 @@ function nextQuestion(){
   }
 }
 function output(){
-  if(x>=75){
-    document.getElementById("finalresults").innerHTML =`You passed. You scored ${x}%`;
+  if(x>=60){
+    document.getElementById("finalresults").innerHTML =`You passed. You've scored ${x}%`;
     document.getElementById("imageid1").style.display = "block";
+    document.getElementById("tryAgain").style.display = "block";
   }
   else{
-    document.getElementById("finalresults").innerHTML =`You failed. Minimum criteria for passing is 75%`;
+    document.getElementById("finalresults").innerHTML =`You failed. Minimum criteria for passing is 60%`;
     document.getElementById("imageid2").style.display = "block";
     document.getElementById("tryAgain").style.display = "block";
   }
